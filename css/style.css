@@ -208,7 +208,12 @@ body {
 .mobile-people-icon:hover {
   background-color: rgba(64, 75, 191, 1);
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1157px) {
   .mobile-menu-button {
     display: none;
   }
@@ -256,7 +261,7 @@ body {
   margin-right: 40px;
 }
 .header-container {
-  display: flex;
+  /*display: flex;
   /*text-align: center;*/
 }
 .headr-link {
@@ -361,10 +366,16 @@ body {
   .header-mail {
     display: none;
   }
-}
-@media screen and (max-width: 767px) {
   .header-exile {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 auto;
   }
 }
 /*---------заголовок+кнопка+фонове зображення------*/
